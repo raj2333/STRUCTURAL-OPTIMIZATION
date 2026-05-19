@@ -1,18 +1,8 @@
 """
 optimization_main.py
 --------------------
-Reusable multi-objective ACOR-MINLP optimizer with optional FEA integration.
+multi-objective ACOR-MINLP optimizer with optional FEA integration.
 
-Main upgrades in this version:
-1. Separate feasibility_tolerance and equality_tolerance.
-2. Stronger optimizer parameter validation.
-3. Near-duplicate filtering for Pareto and near-feasible archives.
-4. Integer-variable archive-probability sampling instead of only Gaussian rounding.
-5. Mutation for continuous, integer, and binary variables.
-6. Adaptive coordinate local search with shrinking step size.
-7. Pareto spacing metric and knee-point selection.
-8. Optional logging-style progress output.
-9. Utility functions for exporting archive and selecting engineering solutions.
 """
 
 from __future__ import annotations
